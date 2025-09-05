@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JS Mantos Construction Services</title>
+<style>
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-image: url('background.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 50%;
+   font-size: 30px;
+   line-height: .5;
+   font-weight: bold;
+ }
+ header {
+   display: flex;
+      align-items: center;
+      justify-content: space-between; /* Align logo left and nav right */
+      gap: 20px;
+      flex-wrap: wrap;
+ }
+ header img {
+   max-width: 200px;
+   height: auto;
+ }
+ header nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    header nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      font-size: 20px;
+    }
+    header nav a:hover {
+      color: #007BFF;
+    }
+ .hero {
+   background: #0716f1;
+   color: #ffffff;
+   padding: 50px 20px;
+   text-align: center;
+ }
+ .services, .projects, .contact {
+   padding: 20px;
+   text-align: center;
+   max-width: 800px;
+   margin: 0 auto;
+ }
+ .services h2, .projects h2, .contact h2 {
+   margin-bottom: 20px;
+   font-size: 45px;
+ }
+ .services p, .projects p, .contact p {
+   margin-bottom: 10px;
+   font-size: 22px;
+   font-weight: normal;
+   line-height: 1.6;
+   color: #000000;
+ }
+ footer {
+   width: 100%;
+   background: #0716f1;
+   color: #ffffff;
+   text-align: center;
+   font-size: 20px;
+   padding: 15px 10px;
+   font-weight: bold;
+   position: relative;
+   left: 0;
+   bottom: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+ footer a {
+   color: #fff;
+   text-decoration: none;
+ }
+ footer img {
+   width: 30px;
+   vertical-align: middle;
+   margin-right: 8px;
+ }
+ h1, h2, h3, h4, h5, h6 {
+   font-weight: bold;
+ }
+ .fade-in {
+   opacity: 0;
+   transform: translateY(20px);
+   animation: fadeInUp 1s ease-out forwards;
+ }
+ @keyframes fadeInUp {
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+ @media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    background-image: url('background.png');
+    background-size: 100% auto; /* Makes background image large horizontally */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+  }
+
+  .hero, .services, .projects, .contact {
+    padding: 15px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 22px;
+    line-height: 1.2;
+    background-image: url('background.png');
+    background-size: 100% auto; /* Ensures large background on tablets too */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+  }
+
+  .hero, .services, .projects, .contact {
+    padding: 25px;
+  }
+
+  header img {
+    max-width: 90%;
+  }
+
+  iframe {
+    height: 300px;
+  }
+ }
+ </style>
+<style>
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+  </style>
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.content {
+    min-height: calc(100vh - 60px);
+    padding: 20px;
+}
+.footer {
+    height: 80px;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: #0716f1;
+}
+</style></head>
+<body>
+<header class="sticky-header">
+<img alt="Mantos Construction Services Logo" src="logo.png"/>
+<nav>
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="about.html">About</a>
+<a href="#contact">Contact</a>
+<a href="map.html">Map</a>
+</nav>
+</header>
+<section class="contact fade-in" style="animation-delay: 0.5s;">
+<h2 class="red-text">Contact Us</h2>
+<p>Unit 302, Building 13, Phase 2, Urban Deca Homes, Tisa, Cebu City</p>
+<p>Contact no.: 09153978459</p>
+<p>Email: jrm.arc12@gmail.com</p>
+<div style="margin-top: 20px;">
+<form action="https://formsubmit.co/jrm.arc12@gmail.com" method="POST" style="margin-top: 20px;">
+<!-- Redirect after submission -->
+<input name="_next" type="hidden" value="https://momoxke123.github.io/JSMantos/"/>
+<!-- Name -->
+<label for="name" style="font-size: 14px; display: block; margin-bottom: 5px;">Please enter your Name here:</label>
+<input id="name" name="name" required="" style="width: 50%; padding: 5px; font-size: 14px; margin-bottom: 15px; text-align: center;" type="text"/>
+<!-- Contact No. -->
+<label for="contact" style="font-size: 14px; display: block; margin-bottom: 5px;">Please enter your Contact No. here:</label>
+<input id="contact" name="contact" required="" style="width: 50%; padding: 5px; font-size: 14px; margin-bottom: 15px; text-align: center;" type="text">
+<!-- Email -->
+<label for="email" style="font-size: 14px; display: block; margin-bottom: 5px;">Please enter your Email here:</label>
+<input id="email" name="email" required="" style="width: 50%; padding: 5px; font-size: 14px; margin-bottom: 15px; text-align: center;" type="email"/>
+<!-- Message -->
+<label for="message" style="font-size: 14px; display: block; margin-bottom: 5px;">Message your inquiries:</label>
+<textarea id="message" name="message" required="" rows="5" style="width: 100%; padding: 5px; font-size: 14px; margin-bottom: 15px; text-align: center;"></textarea>
+<!-- Submit Button -->
+<button style="padding: 10px 20px; font-size: 14px;" type="submit">Send</button>
+</div></section>
+<footer>
+<p>© 2023 Mantos Construction Services. All rights reserved.</p>
+<div style="margin-top: 10px;">
+<a href="https://www.facebook.com/share/1Ekbhnfh1Z/" target="_blank">
+<img alt="Facebook Icon" src="facebook-icon.png"/>Follow us on Facebook
+     </a>
+</div>
+</footer>
+</body>
+</html>

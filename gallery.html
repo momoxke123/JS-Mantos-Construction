@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Mantos Construction Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-image: url('background.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 50%;
+      font-size: 30px;
+      line-height: .5;
+      font-weight: bold;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      max-width: 200px;
+      height: auto;
+    }
+
+    header nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      font-size: 20px;
+    }
+
+    header nav a:hover {
+      color: #007BFF;
+    }
+
+    .hero {
+      background: #0716f1;
+      color: #ffffff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .services, .projects, .contact {
+      padding: 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .services h2, .projects h2, .contact h2 {
+      margin-bottom: 20px;
+      font-size: 45px;
+    }
+
+    .services p, .projects p, .contact p {
+      margin-bottom: 10px;
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 1.6;
+      color: #000000;
+    }
+
+    .swiper {
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      border-radius: 60px;
+    }
+
+    footer {
+      background: #0716f1;
+      color: #ffffff;
+      text-align: center;
+      font-size: 20px;
+      padding: 15px 10px;
+      font-weight: bold;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer img {
+      width: 30px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+        line-height: 1.4;
+        background-size: cover;
+        background-position: center top;
+        padding: 0 10px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      header nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      header img {
+        max-width: 150px;
+      }
+
+      .hero, .services, .projects, .contact {
+        padding: 20px 10px;
+      }
+
+      .services h2, .projects h2, .contact h2 {
+        font-size: 28px;
+      }
+
+      .services p, .projects p, .contact p {
+        font-size: 18px;
+      }
+
+      .swiper-slide img {
+        border-radius: 20px;
+      }
+
+      footer {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      footer img {
+        width: 24px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Mantos Construction Services Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="map.html">Map</a>
+    </nav>
+  </header>
+
+  <section class="projects album fade-in" style="animation-delay: 1s;">
+    <h2>Our Projects</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/project1.jpg" alt="Project 1" /></div>
+        <div class="swiper-slide"><img src="images/project2.jpg" alt="Project 2" /></div>
+        <div class="swiper-slide"><img src="images/project3.jpg" alt="Project 3" /></div>
+        <div class="swiper-slide"><img src="images/project5.jpg" alt="Project 4" /></div>
+        <div class="swiper-slide"><img src="images/project6.jpg" alt="Project 5" /></div>
+        <div class="swiper-slide"><img src="images/project7.jpg" alt="Project 6" /></div>
+        <div class="swiper-slide"><img src="images/project8.jpg" alt="Project 7" /></div>
+        <div class="swiper-slide"><img src="images/project9.jpg" alt="Project 8" /></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <footer>
+    © 2023 Mantos Construction Services. All rights reserved.
+    <div style="margin-top: 10px;">
+      <a href="https://www.facebook.com/share/1Ekbhnfh1Z/" target="_blank">
+        <img src="facebook-icon.png" alt="Facebook Icon" />Follow us on Facebook
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
